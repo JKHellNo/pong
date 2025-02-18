@@ -1,6 +1,11 @@
 import pygame
 import random
+import sys
 
+if __name__ == "__main__":
+    if sys.platform == "emscripten":
+        print("Running in browser")
+        
 # Initialize the game
 pygame.init()
 
